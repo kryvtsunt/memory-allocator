@@ -12,6 +12,17 @@ typedef struct hm_stats {
     long free_length;
 } hm_stats;
 
+typedef struct node_t {
+size_t size;
+struct node_t* next;
+} node;
+
+typedef struct header_t {
+size_t size;
+} header;
+
+
+
 hm_stats* hgetstats();
 void hprintstats();
 
